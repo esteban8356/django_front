@@ -1,0 +1,205 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.titulo {
+  font-family: 'Playfair Display', serif;
+  color: var(--azul);
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.subtitulo {
+  color: var(--texto-muted);
+  font-size: 0.85rem;
+}
+
+.btnNuevo {
+  background: var(--azul);
+  color: var(--blanco);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btnNuevo:hover { background: var(--azul-medio); }
+
+.mensaje {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  margin-bottom: 1.25rem;
+  border-left: 4px solid;
+}
+
+.exito { background: var(--verde-claro); color: var(--verde); border-left-color: var(--verde); }
+.error { background: var(--rojo-claro); color: var(--rojo); border-left-color: var(--rojo); }
+
+.formCard {
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formTitulo {
+  font-family: 'Playfair Display', serif;
+  color: var(--azul);
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.form {}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formGroup { display: flex; flex-direction: column; gap: 6px; }
+.fullWidth { grid-column: 1 / -1; }
+
+.label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--azul);
+  letter-spacing: 0.02em;
+}
+
+.input, .textarea {
+  padding: 9px 12px;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  font-size: 0.88rem;
+  color: var(--texto);
+  background: var(--bg);
+  font-family: 'DM Sans', sans-serif;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input:focus, .textarea:focus { border-color: var(--azul-medio); background: var(--blanco); }
+.textarea { resize: vertical; }
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.btnCancelar {
+  background: transparent;
+  border: 1px solid var(--borde);
+  color: var(--texto-muted);
+  padding: 9px 20px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btnCancelar:hover { border-color: var(--azul); color: var(--azul); }
+
+.btnGuardar {
+  background: var(--azul);
+  color: var(--blanco);
+  border: none;
+  padding: 9px 24px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btnGuardar:hover { background: var(--azul-medio); }
+
+.loading, .empty {
+  text-align: center;
+  color: var(--texto-muted);
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+.tabla {
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tablaHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding: 12px 1.25rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--borde);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--texto-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tablaRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--borde);
+  align-items: center;
+  transition: background 0.15s;
+}
+
+.tablaRow:last-child { border-bottom: none; }
+.tablaRow:hover { background: #fafaf8; }
+
+.rowNombre { font-size: 0.9rem; color: var(--azul); font-weight: 500; }
+.rowFecha { font-size: 0.82rem; color: var(--texto-muted); }
+
+.estado {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.estadoActiva { background: var(--verde-claro); color: var(--verde); }
+.estadoBorrador { background: #fff8e1; color: #f57f17; }
+.estadoCerrada { background: var(--rojo-claro); color: var(--rojo); }
+
+.rowAcciones { display: flex; gap: 8px; }
+
+.btnEditar {
+  background: var(--azul-claro);
+  color: var(--azul);
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.btnEditar:hover { background: var(--azul); color: var(--blanco); }
+
+.btnEliminar {
+  background: var(--rojo-claro);
+  color: var(--rojo);
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.btnEliminar:hover { background: var(--rojo); color: var(--blanco); }

@@ -1,0 +1,145 @@
+.container {
+  min-height: 100vh;
+  background: var(--azul);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.box {
+  background: var(--blanco);
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 380px;
+  border-top: 4px solid var(--dorado);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logoIcon {
+  width: 56px;
+  height: 56px;
+  background: var(--azul);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--dorado);
+}
+
+.logoIcon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.logo h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--azul);
+  font-size: 1.3rem;
+}
+
+.logo p {
+  color: var(--texto-muted);
+  font-size: 0.82rem;
+  margin-top: 4px;
+}
+
+.error {
+  background: var(--rojo-claro);
+  color: var(--rojo);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--rojo);
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--azul);
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--texto);
+  background: var(--bg);
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input:focus {
+  border-color: var(--azul-medio);
+  background: var(--blanco);
+}
+
+.btnLogin {
+  width: 100%;
+  background: var(--azul);
+  color: var(--blanco);
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.btnLogin:hover:not(:disabled) {
+  background: var(--azul-medio);
+}
+
+.btnLogin:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+
+
+/**/
+
+ 
+.exito {
+  background: var(--verde-claro);
+  color: var(--verde);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--verde);
+}
+ 
+.link {
+  text-align: center;
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  color: var(--texto-muted);
+}
+ 
+.link a {
+  color: var(--azul-medio);
+  text-decoration: none;
+  font-weight: 500;
+}
+ 
+.link a:hover {
+  text-decoration: underline;
+}
