@@ -62,7 +62,9 @@ export default function App() {
         <Route path="/admin/candidatos" element={<AdminRoute><AdminCandidatos /></AdminRoute>} />
         <Route path="/admin/votantes" element={<AdminRoute><AdminVotantes /></AdminRoute>} />
         <Route path="/admin/auditoria" element={<AdminRoute><AdminAuditoria /></AdminRoute>} />
+        <Route path="/admin" element={<Navigate to="/admin/elecciones" />} />
         <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </BrowserRouter>
   )
