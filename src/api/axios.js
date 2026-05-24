@@ -5,7 +5,7 @@ revisa si hay tokens guardados y los agrega automaticamente al header
 asi no hay que mandarlo manualmente*/
 
 const api = axios.create({
-  baseURL: 'https://django-bak.vercel.app/',
+  baseURL: 'https://django-bak.vercel.app/api/',
 })
 
 api.interceptors.request.use((config) => {
